@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>sfml_netcore_tutorial</RootNamespace>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SFML.Graphics.NetCore" Version="1.0.0" />
+    <PackageReference Include="SFML.System.NetCore" Version="1.0.0" />
+    <PackageReference Include="SFML.Window.NetCore" Version="1.0.0" />
+  </ItemGroup>
+  <Target Name="CopySFMLBinaries" AfterTargets="BeforeBuild">
+    <Copy SourceFiles="./res/bin/csfml-system-2.dll" DestinationFolder="$(OutDir)"/>
+    <Copy SourceFiles="./res/bin/csfml-graphics-2.dll" DestinationFolder="$(OutDir)"/>
+    <Copy SourceFiles="./res/bin/csfml-window-2.dll" DestinationFolder="$(OutDir)"/>
+  </Target>
+</Project>

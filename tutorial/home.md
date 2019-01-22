@@ -30,7 +30,7 @@
     <Copy SourceFiles="./res/bin/csfml-window-2.dll" DestinationFolder="$(OutDir)"/>
   </Target>`
 7. Create a window and event loop.
-    ![Alt text](/res/EventLoop.png?raw=true "Event Loop")
+    ![Alt text](tutorial/res/EventLoop.png?raw=true "Event Loop")
 8. Create a shape and use the window to draw it.
-    ![Alt text](/res/DrawingCommands.png?raw=true "Drawing A Shape")
+    ![Alt text](tutorial/res/DrawingCommands.png?raw=true "Drawing A Shape")
   
